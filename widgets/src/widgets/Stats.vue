@@ -27,10 +27,36 @@
 
 <template>
   <div>
-    {{ $t('Audio', language) }}
-    {{ $t('Video', language) }}
-    {{ $t('Photo', language) }}
-    {{ $t('Upload Files', language) }}
+    <div>
+      {{ $t('Diagram Stats', language) }}
+      <h5>{{ $t('Data Transfer', language) }}</h5>
+
+      <div>
+        <span>{{ $t('Audio', language) }}</span>
+        <span>{{ $t('Video', language) }}</span>
+        <span>{{ $t('Photo', language) }}</span>
+      </div>
+      <div>
+        <span>{{ $t('Upload Files', language) }}</span>
+        <span>{{ $t('Share link', language) }}</span>
+        <span>{{ $t('Back up', language) }}</span>
+      </div>
+    </div>
+    <div>
+      {{ $t('Month Report', language) }}
+      <h5>{{ $t('Data Transfer', language) }}</h5>
+
+      <div>
+        <span>{{ $t('Audio', language) }}</span>
+        <span>{{ $t('Video', language) }}</span>
+        <span>{{ $t('Photo', language) }}</span>
+      </div>
+      <div>
+        <span>{{ $t('Upload Files', language) }}</span>
+        <span>{{ $t('Share link', language) }}</span>
+        <span>{{ $t('Back up', language) }}</span>
+      </div>
+    </div>
   </div>
 </template>
 

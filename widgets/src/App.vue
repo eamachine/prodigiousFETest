@@ -14,6 +14,8 @@
 <template>
   <main>
     <Header></Header>
+    <Info-bar v-bind:language="locale"></Info-bar>
+
     <section class="intro">
       <h1>{{ $t('Welcome to Widgets Test') }}</h1>
       <span>
@@ -26,7 +28,6 @@
     </section>
 
     <Stats v-bind:language="locale"></Stats>
-    <Info-bar v-bind:language="locale"></Info-bar>
     <Footer v-bind:language="locale"></Footer>
   </main>
 </template>
@@ -56,7 +57,6 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
 
 $body-font : 'Open Sans', sans-serif;
-$title-font : 'Raleway', sans-serif;
 
 body {
   background-color: #F6F0EC;

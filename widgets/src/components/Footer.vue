@@ -21,7 +21,14 @@ export default {
 
 <style lang="scss">
 .footer {
+  position: absolute;
   background-color: #fff;
+  height: 60px;
   width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+  }
 }
 </style>

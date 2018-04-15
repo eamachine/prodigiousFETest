@@ -65,8 +65,9 @@ export default {
    }
 
    &__textbox {
-     width: 60%;
-     min-width: 200px;
+     margin-right: 20px;
+     min-width: 150px;
+     width: 55%;
    }
 
    &__name {
@@ -104,10 +105,16 @@ export default {
      }
    }
 
-   @media only screen and (min-width: 426px) {
+   @media only screen and (min-width: 768px) {
      max-width: 370px;
      position: absolute;
      right: 0;
+
+     &__textbox {
+        margin: 0;
+        min-width: 200px;
+        width: 60%;
+     }
    }
 
  }

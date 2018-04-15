@@ -128,7 +128,7 @@ input[type=checkbox] {
       flex-wrap: wrap;
       justify-content: space-between;
       height: 96px;
-      padding: 20px 32px;
+      padding: 0 20px;
     }
 
     .icon-play {
@@ -187,7 +187,7 @@ input[type=checkbox] {
 
     }
 
-    @media only screen and (min-width: 426px) {
+    @media only screen and (min-width: 768px) {
       max-width: 370px;
       position: absolute;
       left: 0;
