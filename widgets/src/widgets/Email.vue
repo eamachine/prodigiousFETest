@@ -188,6 +188,7 @@ input[type=checkbox] {
     }
 
     @media only screen and (min-width: 768px) {
+      bottom: 0;
       max-width: 370px;
       position: absolute;
       left: 0;
