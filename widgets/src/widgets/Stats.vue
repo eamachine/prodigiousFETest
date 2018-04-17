@@ -12,15 +12,15 @@
       "Back up": "Back up"
     },
     "es": {
-      "Diagram Stats": "Diagram Stats",
-      "Month Report": "Month Report",
-      "Data Transfer": "Data Transfer",
+      "Diagram Stats": "Estadisticas",
+      "Month Report": "Reporte Mensual",
+      "Data Transfer": "Trasferencia de datos",
       "Audio": "Audio",
       "Video": "Video",
       "Photo": "Fotos",
       "Upload Files": "Subir archivos",
-      "Share link": "Share link",
-      "Back up": "Back up"
+      "Share link": "Compartir",
+      "Back up": "Guardar"
     }
   }
 </i18n>

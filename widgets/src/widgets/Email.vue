@@ -81,7 +81,6 @@ input[type=checkbox] {
 .email {
     background-color: #fff;
     border-radius: 5px;
-    height: 460px;
     margin-top: 20px;
     width: 100%;
 
