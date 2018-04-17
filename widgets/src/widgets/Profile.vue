@@ -96,19 +96,22 @@ export default {
      width: 100%;
 
      .icon {
-       color: #8E8071;
        background-color: #F6F0CE;
+       color: #8E8071;
+       cursor: pointer;
        height: 58px;
        line-height: 3.5em;
        text-align: center;
        width: 33%;
      }
+
+     .icon-like:hover {
+       color: #D2471E;
+     }
    }
 
    @media only screen and (min-width: 768px) {
      max-width: 370px;
-     position: absolute;
-     right: 0;
 
      &__textbox {
         margin: 0;

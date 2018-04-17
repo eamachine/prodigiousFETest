@@ -27,8 +27,8 @@
     <div class="email__form">
       <label class="email__label" for="addcontact">{{ $t('Contacts', language) }}</label>
       <div class="email__emails">
-        <span v-for="contact in contacts" class="email__email"> {{ contact }} </span>
-        <button class="icon icon-plus" id="addcontact"></button>
+        <span v-for="contact in contacts" class="email__email" v-on:click="remove()"> {{ contact }} </span>
+        <button class="icon icon-plus" id="addcontact" v-on:click="addContact()"></button>
       </div>
       <label class="email__label" for="subject">{{ $t('Subject', language) }}</label>
       <input class="email__input" id="subject" v-bind:placeholder="$t('You can add a subject', language)"></input>
@@ -55,6 +55,15 @@ export default {
     }
   },
   props : ['language'],
+  methods: {
+      addContact: function () {
+        this.contacts.push(json[0]);
+      },
+      remove: function(item) {
+        const index = this.contacts.indexOf(item);
+        this.contacts.splice(index, 1);
+      }
+  },
   mounted() {
     for ( var i in json) {
       this.contacts.push(json[i]);
@@ -73,6 +82,7 @@ input[type=checkbox] {
     background-color: #fff;
     border-radius: 5px;
     height: 460px;
+    margin-top: 20px;
     width: 100%;
 
     &__form {
@@ -93,6 +103,7 @@ input[type=checkbox] {
 
     &__email {
       color: #fff;
+      cursor: pointer;
       background-color: #5E90AF;
       border-radius: 5px;
       font-size: 14px;
@@ -117,6 +128,7 @@ input[type=checkbox] {
       border: none;
       border-radius: 2px;
       color: #fff;
+      cursor: pointer;
       height: 36px;
       width: 36px;
     }
@@ -133,6 +145,7 @@ input[type=checkbox] {
 
     .icon-play {
       color: #fff;
+      cursor: pointer;
       background-color: #E86741;
       border: none;
       border-radius: 5px;
@@ -188,10 +201,7 @@ input[type=checkbox] {
     }
 
     @media only screen and (min-width: 768px) {
-      bottom: 0;
       max-width: 370px;
-      position: absolute;
-      left: 0;
     }
 }
 

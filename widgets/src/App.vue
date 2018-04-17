@@ -14,7 +14,11 @@
 <template>
   <main>
     <Header></Header>
-    <Info-bar v-bind:language="locale"></Info-bar>
+
+    <div class="widgets__bar">
+      <Info-bar v-bind:language="locale"></Info-bar>
+    </div>
+
 
     <section class="intro">
       <h1>{{ $t('Welcome to Widgets Test') }}</h1>
@@ -27,7 +31,11 @@
       </span>
     </section>
 
-    <Stats v-bind:language="locale"></Stats>
+    <div class="widgets__container">
+      <Profile></Profile>
+      <Stats v-bind:language="locale"></Stats>
+      <Email v-bind:language="locale"></Email>
+    </div>
     <Footer v-bind:language="locale"></Footer>
   </main>
 </template>
@@ -37,12 +45,15 @@ import Vue from 'vue'
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
-import Stats from './widgets/Stats.vue';
+
+import Profile from './widgets/Profile.vue'
 import InfoBar from './widgets/InfoBar.vue';
+import Email from './widgets/Email.vue'
+import Stats from './widgets/Stats.vue';
 
 export default {
   name: 'app',
-  components: {Header, Footer, Stats, InfoBar},
+  components: {Header, Footer, InfoBar, Email, Stats, Profile},
   data () { return { locale: 'en' } },
   watch: {
     locale (val) {
@@ -148,4 +159,17 @@ a {
 .icon-play:before {
   content: "\ea15";
 }
+
+.widgets__container {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.widgets__bar {
+    display: flex;
+    justify-content: center;
+}
+
 </style>

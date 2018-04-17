@@ -1,0 +1,35 @@
+[{
+  "audio" : {
+    "total" : 55,
+    "files" : 2319,
+    "weight" : 54
+  },
+  "video" : {
+    "total" : 23,
+    "files" : 2435,
+    "weight" : 47
+  },
+  "photo" : {
+    "total" : 17,
+    "files" : 1435,
+    "weight" : 17
+  }
+},
+{
+  "audio" : {
+    "total" : 15,
+    "files" : 319,
+    "weight" : 4
+  },
+  "video" : {
+    "total" : 65,
+    "files" : 3435,
+    "weight" : 57
+  },
+  "photo" : {
+    "total" : 20,
+    "files" : 1035,
+    "weight" : 27
+  }
+}
+]

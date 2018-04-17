@@ -7,15 +7,12 @@
 <template>
   <header class="header">
     <img class="logo" src="../assets/images/logo.png">
-    <Profile></Profile>
   </header>
 </template>
 
 <script>
-import Profile from '../widgets/Profile.vue'
 
 export default {
-  components: {Profile},
 }
 </script>
 
